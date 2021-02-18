@@ -4,14 +4,20 @@ import FormInput from "../form-input/FormInput";
 import "./form.css";
 
 const handleClick = (email, password) => {
-  if (!email || !password) {
-    alert("Fill in all required fields");
+  if (!email && !password) {
+    alert("Email&Password required");
+    return;
+  } else if (!email) {
+    alert("Email required");
+    return;
+  } else if (!password) {
+    alert("Password required");
     return;
   }
   alert(`email: ${email}\npassword: ${password}`);
 };
 
-const Form = ({ label }) => {
+const Form = ({ label, btnText }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -38,7 +44,7 @@ const Form = ({ label }) => {
         onClick={() => handleClick(email, password)}
         className="login-btn"
       >
-        LOG IN
+        {btnText}
       </button>
       <h3 className="additional forgot">
         <a href="#">Forgot your password?</a>

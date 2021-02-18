@@ -32,7 +32,7 @@ function App() {
         className="svg mobile bottom-svg weather-svg"
         alt="man"
       />
-      <Form label="login" />
+      <Form label="login" btnText="LOG IN" />
     </div>
   );
 }
