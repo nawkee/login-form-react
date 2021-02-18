@@ -1,25 +1,11 @@
+@import 'icons.css';
+
 .App {
     max-width: 100%;
     height: 100vh;
     background-color: #e5e5e5;
     position: relative;
     font-family: 'Roboto', sans-serif;
-}
-
-.shape-svg {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
-
-.man-svg {
-    height: 100%;
-    width: auto;
-    position: absolute;
-    left: 0;
-    bottom: 0;
 }
 
 * {
@@ -30,10 +16,4 @@
 
 a {
     text-decoration: none;
-}
-
-@media (max-width: 900px) {
-    .man-svg {
-        display: none;
-    }
 }

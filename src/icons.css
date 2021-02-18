@@ -1,0 +1,81 @@
+.svg {
+    position: absolute;
+}
+
+.shape-svg {
+    width: 100%;
+    height: auto;
+    left: 0;
+    bottom: 0;
+}
+
+.man-svg {
+    height: 100%;
+    width: auto;
+    left: 0;
+    bottom: 0;
+}
+
+.one-svg {
+    width: 150px;
+    height: auto;
+}
+
+.one-svg.first {
+    top: 50%;
+    left: 30px;
+}
+
+.one-svg.second {
+    bottom: 30px;
+    left: 50%;
+}
+
+.mobile {
+    display: none;
+}
+
+.bottom-svg {
+    width: 160px;
+    height: auto;
+    bottom: 30px;
+}
+
+@media (max-width: 900px) {
+    .man-svg {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .calendar-svg {
+        left: 30px;
+
+    }
+
+    .weather-svg {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .mountain-svg {
+        right: 30px;
+    }
+
+    .one-svg.first {
+        top: 30px;
+        transform: rotate(-32.87deg);
+    }
+
+    .one-svg.second {
+
+    }
+}
+
+@media (max-width: 700px) {
+    .mobile {
+        display: none;
+    }
+}
