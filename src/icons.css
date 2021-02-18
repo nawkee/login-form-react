@@ -28,7 +28,7 @@
 
 .one-svg.second {
     bottom: 30px;
-    left: 50%;
+    left: 800px;
 }
 
 .mobile {
@@ -39,6 +39,12 @@
     width: 160px;
     height: auto;
     bottom: 30px;
+}
+
+@media (max-width: 1300px) {
+    .one-svg.second {
+        left: 500px;
+    }
 }
 
 @media (max-width: 900px) {
@@ -52,7 +58,6 @@
 
     .calendar-svg {
         left: 30px;
-
     }
 
     .weather-svg {
@@ -70,7 +75,11 @@
     }
 
     .one-svg.second {
-
+        width: 80px;
+        height: auto;
+        right: 30px;
+        left: auto;
+        bottom: 30%;
     }
 }
 
